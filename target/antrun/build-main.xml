@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <zip basedir="." excludes="src/main/java/com/codenjoy/dojo/snake/client/ai/*,                                                src/test/java/com/codenjoy/dojo/snake/client/ai/*,                                                **/target/**" destfile="src/main/webapp/resources/user/snake-servers.zip" update="true" includes="src/main/java/com/codenjoy/dojo/snake/client/*.java,                                                src/main/java/com/codenjoy/dojo/snake/model/Elements.java,                                                src/test/java/com/codenjoy/dojo/snake/client/*.java,                                                README.*,                                                src/license/**,                                                **/pom.xml"/>
+  <zip basedir="." excludes="src/main/java/**,                                                 src/main/webapp/**,                                                 src/main/resources/**,                                                 **/target/**" destfile="src/main/webapp/resources/user/snake-servers.zip" update="true" includes="src/main/**"/>
+  <zip basedir="src/main/webapp" excludes="" destfile="C:\Users\Vadim\IdeaProjects\Steps\snake\target/snake-engine.jar" update="true" includes="resources/user/snake-servers.zip"/>
+  <zip basedir="src/main/webapp" excludes="" destfile="C:\Users\Vadim\IdeaProjects\Steps\snake\target/snake-engine-sources.jar" update="true" includes="resources/user/snake-servers.zip"/>
+</target>
+</project>
